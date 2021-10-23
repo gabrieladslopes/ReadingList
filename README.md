@@ -25,7 +25,7 @@ A Spring MVC controller which will handle HTTP requests for the application.
 
 Annotations:
 * @Controller - anotates this controller in order for it to be picked up by component-scanning and automatically be registered as a bean in the Spring application content
-* @RequestMapping - map all handler methods to a base URL path of "/" 
+* @RequestMapping - map all handler methods to a base URL path of "/readingList" 
 
 ## ReadingList View
 
