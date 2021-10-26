@@ -1,17 +1,17 @@
 # ReadingList Project
 
-Reading List project learned in the Spring Boot in Action book.
+Reading List is a project proposed in the book "Spring Boot in Action".
 
-I've used this project to learn how to develop a Spring application using Spring Boot. The dependencies chosen for this development were: Spring Web, Spring Data JPA, Thymeleaf, H2 Database and the development dependency Spring Boot Devtools. The build tool used was Maven. 
+I've used this project to learn how to develop a Spring application using Spring Boot. The starter dependencies chosen for this development were: Spring Web, Spring Data JPA, Thymeleaf, H2 Database and the development dependency Spring Boot Devtools. Also, the build tool used was Maven. 
 
 # Application
 
 ## Book Entity
 
-The Book entity represents a book and will represent a table in the database.
+The Book entity represents a book and reflects a table in the database.
 
 Annotations:
-* @Entity - specifies that the class in an entity
+* @Entity - specifies that the class is an entity
 * @Id - specifies the primary key of a table
 * @GeneratedValue - indicates that the value will be automatically provided
 
@@ -21,11 +21,11 @@ Repository through which the ReadingList objects will be persisted to the databa
 
 ## ReadingList Controller
 
-A Spring MVC controller which will handle HTTP requests for the application.
+A Spring MVC controller which handles HTTP requests for the application.
 
 Annotations:
-* @Controller - anotates this controller in order for it to be picked up by component-scanning and automatically be registered as a bean in the Spring application content
-* @RequestMapping - map all handler methods to a base URL path of "/readingList" 
+* @Controller - anotates this controller in order to be picked up by component-scanning and automatically be registered as a bean in the Spring application context
+* @RequestMapping - maps all handler methods to a base URL path of "/readingList" 
 
 ## ReadingList View
 
