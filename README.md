@@ -4,6 +4,8 @@ Reading List is a project proposed in the book "Spring Boot in Action".
 
 I've used this project to learn how to develop a Spring application using Spring Boot. The starter dependencies chosen for this development were: Spring Web, Spring Data JPA, Thymeleaf, H2 Database and the development dependency Spring Boot Devtools. Also, the build tool used was Maven. 
 
+The Spring Secutiry dependency was added as an example of how to add a starter dependency and override an auto-configuration afterwards.
+
 # Application
 
 ## Book Entity
@@ -30,4 +32,38 @@ Annotations:
 ## ReadingList View
 
 A Thymeleaf template that presents a reading list: readingList.html
+
+## SecurityConfig
+
+A class used to explicitly define some security configuration in order to override spring-starter-security auto-configuration.
+
+The users are going to be authenticated against the database via JPA.
+
+Annotation:
+* @Configuration - 
+* @EnableWebSecurity - 
+
+
+## Reader Repository
+
+Spring Data JPA repository interface for persisting readers.
+
+
+## Reader Entity
+
+JPA entity with fields to capture the username, password and full name of the user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

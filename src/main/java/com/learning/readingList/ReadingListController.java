@@ -21,7 +21,7 @@ public class ReadingListController {
 	}
 	
 	@RequestMapping(value="/{reader}", method=RequestMethod.GET)
-	public String readersBooks(@PathVariable("reader") String reader, Model model) {
+	public String readersBooks(String reader, Model model) {
 		List<Book> readingList = readingListRepository.findByReader(reader);
 		if(readingList != null) {
 			model.addAttribute("books", readingList);
@@ -35,6 +35,5 @@ public class ReadingListController {
 		readingListRepository.save(book);
 		return "redirect:/readingList/{reader}";
 	}
-	
 }
 
